@@ -27,7 +27,7 @@ app.get('/movies', function (req, res) {
      
     connection.getConnection(function (err, connection) {
 
-      var sql = "SELECT * FROM movies; SELECT * FROM watchlists WHERE user = 1"
+      var sql = "SELECT * FROM movies WHERE movies.score IS NOT NULL AND movies.score > 8.5; SELECT * FROM watchlists WHERE user = 1";
       connection.query(sql, function (error, results, fields) {
         if (error) throw error;
 

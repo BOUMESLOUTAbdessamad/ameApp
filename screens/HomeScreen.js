@@ -178,7 +178,8 @@ class HomeScreen extends React.Component {
               </Button>
             </Card.Actions> */}
               <Card.Content>
-                <View
+            {( movie.score ?
+               <View
                   style={{
                     flex: 1,
                     flexDirection: "row",
@@ -187,21 +188,23 @@ class HomeScreen extends React.Component {
                   }}
                 >
                   <Icon
-                    name="star"
-                    type="material"
-                    size={20}
-                    color="#DAA520"
-                    style={{ marginRight: 5 }}
-                  />
-                  <Text
-                    style={{
-                      fontSize: 15,
-                      fontWeight: "bold",
-                    }}
-                  >
-                    {movie.score.toFixed(1)}
-                  </Text>
-                </View>
+                      name="star"
+                      type="material"
+                      size={20}
+                      color="#DAA520"
+                      style={{ marginRight: 5 }}
+                    />
+                    <Text
+                      style={{
+                        fontSize: 15,
+                        fontWeight: "bold",
+                      }}
+                    >
+                      {movie.score.toFixed(1)}
+                    </Text> 
+                  </View> 
+                     : null )}
+            
               </Card.Content>
             </Card>
           </TouchableOpacity>
