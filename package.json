@@ -1,0 +1,61 @@
+{
+  "name": "ame",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@mloureiro/react-native-expandable-text": "^0.2.3",
+    "@react-native-community/async-storage": "^1.11.0",
+    "@react-native-community/masked-view": "^0.1.10",
+    "@react-navigation/bottom-tabs": "^5.5.2",
+    "@react-navigation/material-bottom-tabs": "^5.2.10",
+    "@react-navigation/material-top-tabs": "^5.2.10",
+    "@react-navigation/native": "^5.5.1",
+    "@react-navigation/stack": "^5.5.1",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dateformat": "^3.0.3",
+    "express": "^4.17.1",
+    "md5": "^2.2.1",
+    "moment": "^2.27.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4",
+    "querystring": "^0.2.0",
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "react-native-elements": "^2.0.2",
+    "react-native-gesture-handler": "^1.6.1",
+    "react-native-loading-spinner-overlay": "^1.1.0",
+    "react-native-my-sql-connection": "^1.0.4",
+    "react-native-paper": "^3.10.1",
+    "react-native-reanimated": "^1.9.0",
+    "react-native-safe-area-context": "^3.0.3",
+    "react-native-screens": "^2.8.0",
+    "react-native-shadow": "^1.2.2",
+    "react-native-snap-carousel": "^3.9.1",
+    "react-native-splash-screen": "^3.2.0",
+    "react-native-tab-view": "^2.14.4",
+    "react-native-tag-input": "0.0.21",
+    "react-native-vector-icons": "^6.7.0",
+    "react-native-x-carousel": "^1.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
